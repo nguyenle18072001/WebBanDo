@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Giay</title>
+    <meta charset="utf-8" />
+
+    <script src="../JS/Jquery.js"></script>
+    <script src="../JS/figurecaptions.js"></script>
+    <link href="../CSS/figurecaptions.css" rel="stylesheet" />
+    <script src="../JS/Tweenmax.js"></script>
+
+    <script src="../JS/jssor.slider-22.2.8.debug.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.min.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.mini.js"></script>
+
+    <link href="../CSS/giay.css" rel="stylesheet" />
+    <link href="../CSS/base.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('#eg1').addCaption({
+                fx: 'zoomin',
+                caption: 'Giày búp bê cao cấp<br>Mã SP: BB200<br>  Màu sắc: trắng<br> Giá sản phẩm: 150.000VND<br> Size chân: 36, 37, 38, 39'
+            })
+            $('#eg2').addCaption({
+                fx: 'zoomin',
+                caption: ' Giày cao cổ<br>Mã SP: CC201<br> Màu sắc: nâu<br> Giá sản phẩm: 250.000VND<br> Size chân:37, 38, 39, 40'
+            })
+            $('#eg3').addCaption({
+                fx: 'zoomin',
+                caption: 'Giày cao gót<br>Mã SP: CG202<br>  Màu sắc: trắng, đen, đỏ, hồng<br> Giá sản phẩm: 350.000VND<br> Size chân: 36, 37, 38, 39, 40'
+            })
+           
+            $('#eg4').addCaption({
+                fx: 'zoomin',
+                caption: 'Giày mọi nam<br> Mã SP: GM205<br> Màu sắc: xanh, đen<br>Chất liệu: vải<br> Giá sản phẩm: 399.000VND<br> Size chân:37, 38, 39, 40'
+            })
+            $('#eg5').addCaption({
+                fx: 'zoomin',
+                caption: 'Giày nam<br>Mã SP: GM206<br>  Màu sắc: xanh, đen, đỏ<br>Chất liệu: giả da<br> Giá sản phẩm: 400.000VND<br> Size chân:37, 38, 39, 40, 41'
+            })
+            $('#eg6').addCaption({
+                fx: 'zoomin',
+                caption: 'Sneak nam<br>Mã SP: GT102<br>  Màu sắc: đen<br>Chất liệu: giả da<br> Giá sản phẩm: 250.000VND<br> Size chân:37, 38, 39, 40, 41'
+            })
+            $('#eg7').addCaption({
+                fx: 'zoomin',
+                caption: 'Giày độn<br>Mã SP: GN198<br>Chiều cao: giày tăng chiều cao 5 cm<br>Chất liệu: Da bò<br> Màu sắc: trắng<br>Giá sản phẩm:200.000 VND<br> Size chân: 35, 36, 37, 38, 39, 40'
+            })
+            $('#eg8').addCaption({
+                fx: 'zoomin',
+                caption: ' Boot da lộn<br>Mã SP: GM208<br> Màu sắc: đen<br>Chất liệu: da lộn<br> Giá sản phẩm: 300.000VND<br> Size chân:37, 38, 39, 40, 41'
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideshowTransitions = [
+              { $Duration: 1200, $Opacity: 2 }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1150);/* Chỉnh độ rộng độ cao của slideshow ở đây */
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('../images/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('../images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora12l {
+            background-position: -16px -37px;
+        }
+
+        .jssora12r {
+            background-position: -75px -37px;
+        }
+
+        .jssora12l:hover {
+            background-position: -136px -37px;
+        }
+
+        .jssora12r:hover {
+            background-position: -195px -37px;
+        }
+
+        .jssora12l.jssora12ldn {
+            background-position: -256px -37px;
+        }
+
+        .jssora12r.jssora12rdn {
+            background-position: -315px -37px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>LÊ NGUYÊN Shop</p>
+            <div id="nav_social">
+                <a href="#"><img src="../banner/instagram.png" alt="Become a fan" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/facebook.png" alt="Follows on Facebook" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/zalo.png" alt="Contact" width="40" height="40" /></a>
+            </div>
+
+            <div id="search-top">
+                <form method="post" action="#">
+                    <input type="text" onfocus="if (this.value == 'Search') this.value = '';" onblur="if (this.value == '') this.value = 'Search';" value="Search" id="search-field" />
+                    <input type="submit" value="" id="search-btn" />
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                    <div class="subsp">
+
+                        <div class="cs21">
+                            <h3>Quần áo</h3>
+                            <a href="quanao.html">Quần áo nam</a>
+                            <a href="quanao.html">Quần áo nữ</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Giày</h3>
+                            <a href="giay.html">Giày công sở</a>
+                            <a href="giay.html">Giày thể thao</a>
+                            <a href="giay.html">Giày ghệt</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Son</h3>
+                            <a href="son.html">Son dưỡng</a>
+                            <a href="son.html">Son kem</a>
+                            <a href="son.html">Son li</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <section class="slideshow">
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1150px;height:250px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1150px;height:250px;overflow:hidden;">
+
+                    <div>
+
+                        <img data-u="image" src="../giay/bannergiay1.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="../giay/bannergiay2.png" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="../giay/bannergiay3.jpg" />
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="../giay/bannergiay4.jpg" />
+                    </div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype" style="width:16px;height:16px;"></div>
+                </div>
+                <!-- Arrow Navigator -->
+                <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+            </div>
+            <script type="text/javascript">jssor_1_slider_init();</script>
+        </section>
+        <article class="contentindex">
+            <section class="sanphammoi">
+                <h3>SẢN PHẨM BÁN CHẠY NHẤT HIỆN NAY</h3>
+                <div class="spm">
+
+                    <img src="../giay/giaybupbe.jpg" id="eg1"/>
+                    <div class="thongtin">
+                        <div class="mota">Giày búp bê</div>
+                        <div class="gia">Giá : 150,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+                    <img src="../giay/giaycaoco.jpg" id="eg2" />
+                    <div class="thongtin">
+                       
+                        <div class="mota">Giày cao cổ</div>
+                        <div class="gia">Giá : 250,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+                    <img src="../giay/giaycaogot.jpg" id="eg3" />
+                    <div class="thongtin">
+                        <div class="mota">Giày cao gót</div>
+                        <div class="gia">Giá : 300,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+
+                    <img src="../giay/giaymoinam.jpg" id="eg4" />
+                    <div class="thongtin">
+                        <div class="mota">Giày mọi</div>
+                        <div class="gia">Giá : 250,000 vnđ</div>
+                    </div>
+                </div>
+                </section>
+            <section class="sanphamkhuyenmai">
+                <div class="spkm">
+                     
+                    <img src="../giay/giaynam.jpg" id="eg5" />
+                    <div class="thongtin">
+                        <div class="mota">Giày nam</div>
+                        <div class="gia">
+                            Giá: 300,000 vnđ/ 1 đôi
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+                    <img src="../giay/giaysneakernam.jpg" id="eg6" />
+                    <div class="thongtin">
+                        <div class="mota">Sneaker nam</div>
+                        <div class="gia">
+                            Giá: 250,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+                    <img src="../giay/giaytangchieucao.jpg" id="eg7" />
+                    <div class="thongtin">
+                        <div class="mota">Giày độn</div>
+                        <div class="gia">
+                            Giá: 250,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+                    <img src="../giay/giaybotdalon.jpg" id="eg8" />
+                    <div class="thongtin">
+                        <div class="mota">Boot da lộn</div>
+                        <div class="gia">
+                            Giá: 350,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+        <footer>
+            <ul>
+                <li>Cửa hàng bán sỉ và lẻ các loại giày nam, nữ, quần áo và son các loại</li>
+                <li>Địa chỉ: 46, khu phố 5, đường TTN14, phường Tân Thới Nhất, quận 12, TPHCM</li>
+                <li>Điện thoại:0909178345-01674745478</li>
+            </ul>
+        </footer>
+    </div>
+   <script src="https://uhchat.net/code.php?f=83624b"></script>
+</body>
+
+</html>
+

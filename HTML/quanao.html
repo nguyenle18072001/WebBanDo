@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quan ao</title>
+    <meta charset="utf-8" />
+
+    <script src="../JS/Jquery.js"></script>
+    <script src="../JS/figurecaptions.js"></script>
+    <script src="../JS/Tweenmax.js"></script>
+    <link href="../CSS/figurecaptions.css" rel="stylesheet" />
+
+    <script src="../JS/jssor.slider-22.2.8.debug.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.min.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.mini.js"></script>
+
+    <link href="../CSS/quanao.css" rel="stylesheet" />
+    <script>
+        $(function () {
+            $('#eg1').addCaption({
+                fx: 'dualpanels',
+                caption: 'Áo khoác nam phong cách<br>Mã số:TN-156<br>Màu sắc: cam, đen, trắng<br>Giá sản phẩm:200.000 VND<br> Size: X, L, XL<br>Miêu tả sản phẩm: Chất vãi nỉ ngọai, dày đẹp, chắc chắn, không xù, không xổ lông, thiết kế thời trang, sành điệu'
+            })
+            $('#eg2').addCaption({
+                fx: 'dualpanels',
+                caption: 'Bộ đồ nam<br>Mã số:TN-158<br>Màu sắc: tất cả các màu<br>Giá sản phẩm:250.000 VND<br> Size: X, L, XL<br>Miêu tả sản phẩm: Chất liệu: Thun lạnh 100% cotton 4 chiều. Mực in dẻo plastisol Korea, cam kết chất lượng nhất thị trường'
+            })
+            $('#eg3').addCaption({
+                fx: 'dualpanels',
+                caption: 'Áo khoác nữ<br>Mã số:TN-160<br>Màu sắc:các loại màu<br>Giá sản phẩm:200.000 VND<br> Size: X, L, XL<br>Miêu tả sản phẩm: COTTON DẺO CAO CẤP DÀY MỀM MỊN THOÁNG. KIỂU DÁNG THỜI TRANG.'
+            })
+            $('#eg4').addCaption({
+                fx: 'dualpanels',
+                caption: 'Áo phông nam, nữ<br>Mã số:TN-166<br>Màu sắc: sọc nâu đen <br>Giá sản phẩm:100.000 VND<br> Size: X, L, XL<br>Miêu tả sp: Những chiếc áo có bề mặt được trang trí kết hợp giữa nhiều hình ảnh và chữ, kí hiệu. Chúng thể hiện phong cách cá tính của người mặc'
+            })
+            $('#eg5').addCaption({
+                fx: 'dualpanels',
+                caption: 'Áo đôi<br>Mã số:TN-168<br>Màu sắc:các loại màu<br>Giá sản phẩm:150.000 VND<br> Size: X, L, XL<br>Miêu tả sp: Những chiếc áo có bề mặt được trang trí kết hợp giữa nhiều hình ảnh và chữ, kí hiệu. Chúng thể hiện phong cách cá tính của người mặc'
+            })
+            $('#eg6').addCaption({
+                fx: 'dualpanels',
+                caption: 'Áo phông nam nữ<br>Mã số:TN-166<br>Màu sắc:các loại màu<br>Giá sản phẩm:99.000 VND<br> Size: X, L, XL<br>Miêu tả sp: Với áo thun nữ (áo phông nữ) của chúng tôi bạn có thể kết hợp với áo sơ mi, mặc bên trong hoặc bên ngoài đều rất cá tính. Áo thun (áo phông) dễ kết hợp với nhiều loại quần khác nhau. Quần jeans, quần kaki, quần sooc hoặc quần ngố đều phù hợp.'
+            })
+            $('#eg7').addCaption({
+                fx: 'dualpanels',
+                caption: 'Phông nữ<br>Mã số:TN-170<br>Màu sắc:các loại màu<br>Giá sản phẩm:69.000 VND<br> Size: X, L, XL<br>Miêu tả sản phẩm:Với áo thun nữ (áo phông nữ) của chúng tôi bạn có thể kết hợp với áo sơ mi, mặc bên trong hoặc bên ngoài đều rất cá tính. Áo thun (áo phông) dễ kết hợp với nhiều loại quần khác nhau. Quần jeans, quần kaki, quần sooc hoặc quần ngố đều phù hợp.'
+            })
+            $('#eg8').addCaption({
+                fx: 'dualpanels',
+                caption: 'Quần nỉ nữ<br>Mã số:TT-156<br>Màu sắc:xám, đen<br>Giá sản phẩm:90.000 VND<br> Size: X, L, XL<br>Miêu tả sản phẩm:Quần Skinny với chất liệu dày dặn, co giãn 4 chiều, là lựa chọn hàng đầu của phái đẹp sở hữu kiểu dáng ôm gọn và đem đến cảm giác gọn gàng, thoải mái khi mặc. Ưu điểm là co dãn tốt, màu sắc đa dạng dễ dàng phối với tất cả các mẫu áo.'
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideshowTransitions = [
+              { $Duration: 1200, $Opacity: 2 }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1150);/* Chỉnh độ rộng độ cao của slideshow ở đây */
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('../images/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('../images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora12l {
+            background-position: -16px -37px;
+        }
+
+        .jssora12r {
+            background-position: -75px -37px;
+        }
+
+        .jssora12l:hover {
+            background-position: -136px -37px;
+        }
+
+        .jssora12r:hover {
+            background-position: -195px -37px;
+        }
+
+        .jssora12l.jssora12ldn {
+            background-position: -256px -37px;
+        }
+
+        .jssora12r.jssora12rdn {
+            background-position: -315px -37px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>LÊ NGUYÊN Shop</p>
+            <div id="nav_social">
+                <a href="#"><img src="../banner/instagram.png" alt="Become a fan" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/facebook.png" alt="Follows on Facebook" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/zalo.png" alt="Contact" width="40" height="40" /></a>
+            </div>
+
+            <div id="search-top">
+                <form method="post" action="#">
+                    <input type="text" onfocus="if (this.value == 'Search') this.value = '';" onblur="if (this.value == '') this.value = 'Search';" value="Search" id="search-field" />
+                    <input type="submit" value="" id="search-btn" />
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                    <div class="subsp">
+
+                        <div class="cs21">
+                            <h3>Quần áo</h3>
+                            <a href="quanao.html">Quần áo nam</a>
+                            <a href="quanao.html">Quần áo nữ</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Giày</h3>
+                            <a href="giay.html">Giày công sở</a>
+                            <a href="giay.html">Giày thể thao</a>
+                            <a href="giay.html">Giày ghệt</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Son</h3>
+                            <a href="son.html">Son dưỡng</a>
+                            <a href="son.html">Son kem</a>
+                            <a href="son.html">Son li</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <section class="slideshow">
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1150px;height:250px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1150px;height:250px;overflow:hidden;">
+
+                    <div>
+                        <img data-u="image" src="../quanao/bannerquanao1.png" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="../quanao/bannerquanao2.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="../quanao/bannerquanao3.jpg" />
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="../quanao/bannerquanao4.jpg" />
+                    </div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype" style="width:16px;height:16px;"></div>
+                </div>
+                <!-- Arrow Navigator -->
+                <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+            </div>
+            <script type="text/javascript">jssor_1_slider_init();</script>
+        </section>
+        <article class="contentindex">
+            <section class="sanphammoi">
+                <h3>SẢN PHẨM BÁN CHẠY NHẤT HIỆN NAY</h3>
+                <div class="spm">
+                    <img src="../quanao/khoacnam.jpg"  width="200" id="eg1"/>
+                    <div class="thongtin">
+                        <div class="mota">Áo khoác nam</div>
+                        <div class="gia">Giá : 200,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+                    <img src="../quanao/quanaonam.jpg" width="200" id="eg2" />
+                    <div class="thongtin">
+                        <div class="mota">Quần áo nam</div>
+                        <div class="gia">Giá : 250,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+                    <img src="../quanao/khoacnu.jpg" width="200" id="eg3" />
+                    <div class="thongtin">
+                        <div class="mota">Áo khoác nữ</div>
+                        <div class="gia">Giá : 200,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+
+                    <img src="../quanao/phong.jpg" width="200" id="eg4" />
+                    <div class="thongtin">
+                        <div class="mota">Áo phông</div>
+                        <div class="gia">Giá : 100,000 vnđ</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sanphamkhuyenmai">
+
+                <div class="spkm">
+                    <img src="../quanao/phongdoi.jpg" width="200" id="eg5" />
+                    <div class="thongtin">
+                        <div class="mota">Áo đôi</div>
+                        <div class="gia">
+                            Giá: 300,000 vnđ/ 1 đôi
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+                    <img src="../quanao/phongnamnu.jpg" width="200" id="eg6" />
+                    <div class="thongtin">
+                        <div class="mota">Áo phông nam nữ</div>
+                        <div class="gia">
+                            Giá: 99,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+                    <img src="../quanao/phongnu.jpg" width="200" id="eg7" />
+                    <div class="thongtin">
+                        <div class="mota">Áo phông nữ</div>
+                        <div class="gia">
+                            Giá: 69,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+                    <img src="../quanao/quanni.jpg" width="200" id="eg8" />
+                    <div class="thongtin">
+                        <div class="mota">Quần nỉ nữ</div>
+                        <div class="gia">
+                           Giá: 90,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </article>
+        <footer>
+            <ul>
+                <li>Cửa hàng bán sỉ và lẻ các loại giày nam, nữ, quần áo và son các loại</li>
+                <li>Địa chỉ: 46, khu phố 5, đường TTN14, phường Tân Thới Nhất, quận 12, TPHCM</li>
+                <li>Điện thoại:0909178345-01674745478</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://uhchat.net/code.php?f=83624b"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,212 @@
+﻿body{
+    background-color:lightgray;
+    margin:0;
+}
+
+header{
+    width:1150px;
+    height:105px;
+    background-color:yellow;
+    margin:0 auto;
+}
+
+header p{
+    color:green;
+    font-weight:bold;
+    font-size:40px;
+    float:left;
+    margin-left:30px;
+    margin-top:20px;
+}
+
+nav{
+    width:100%;
+    height:40px;
+    background-color:lightgray;
+    margin-bottom:10px;
+}
+
+.topnav{
+    width:1150px;
+    position:relative;
+    height:40px;
+    background-color:green;
+    list-style:none;
+    padding:0px;
+    margin:0 auto;
+}
+
+.topnav li{
+    float:left;
+    height:40px;
+    padding:0px;
+
+}
+
+.topnav li a{
+    padding:10px 30px;
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    
+}
+
+.topnav li:hover{
+    background-color:#333;
+}
+
+.topnav li div.subsp {
+    position: absolute;
+    top: 39px;background-color:lightgray;
+    padding:50px;
+    display: none;
+    font-weight:bold;
+    z-index:1000;
+}
+
+.topnav li:hover div.subsp {
+    display: block;
+    width:520px;
+    left: 50px;
+    box-shadow: 3px 3px 3px #666;	                        
+    -moz-box-shadow: 3px 3px 3px #666;
+    -webkit-box-shadow: 3px 3px 3px #666;
+    opacity:0.8;
+}
+
+.topnav li div.subsp p {
+    margin-bottom:5px;
+    text-align:justify;
+}
+
+.topnav li div.subsp h3{
+    color:#F06; 
+    font-size:20px;
+    font-weight:bolder;
+}
+
+.topnav li div.subsp div.cs21 {
+    float: left; 
+    padding:5px;
+    width:160px;
+}
+
+.topnav li div.subsp div.cs21 a{
+    display:block; 
+    margin:0;
+    padding:0;
+    padding:0 0 5px;
+    color:#333;
+}
+
+.topnav li div.subsp div.cs21 a:hover{
+    color:#F06;
+}
+
+
+
+
+#nav_social{
+    float:left;
+    width:140px;
+    margin-top:20px;
+    margin-left:450px;
+}
+
+div#search-top form{
+    width:160px;
+    float:left;
+    background:#666;
+    color:#fff;
+    padding:3px 0 3px 0;
+    margin-left:5px;
+    margin-top:20px;
+}
+
+input#search-field{
+    width:123px;
+    height:24px;
+    padding:0 6px 0 8px;
+    float:left;
+    background:#666;
+    border:none;
+    margin:0;
+    color:#fff;
+}
+input#search-field:focus{
+    color:#fff;
+}
+
+input#search-btn{
+    width:18px;
+    height:18px;
+    float:left;
+    margin:3px 0 0 0;
+    padding:0 0px 0px 0;
+    text-align:center;
+    color:#555;
+    cursor:pointer;
+    border:none;
+    background:url(../banner/search-btn.png) no-repeat center;
+}
+
+.content{
+    width:1150px;
+    height:900px;
+    background-color:white;
+    margin:10px auto;
+}
+ h2{
+    font-weight:bolder;
+    color:#14fb83;
+    text-align:center;
+    font-family:DotumChe;
+    font-size:35px;
+   
+    
+}
+ .nd{
+     padding-left:10px;
+ }
+
+ .nd p{
+     font-family:'Letter Gothic Std';
+     font-size:20px;
+     color:#e825cc;
+     text-align:center;
+     font-weight:bolder;
+ }
+
+ dl dt{
+     color:red;
+     font-family:Gabriola;
+     font-weight:bold;
+     font-size:26px;
+     padding-left:10px;
+ }
+
+dd{
+     color:blue;
+     letter-spacing:1px;
+     font-size:17px;
+     letter-spacing:1px;
+
+ }
+
+footer{
+    width:1150px;
+    height:150px;
+    background-color:green;
+    margin:10px auto;
+}
+footer ul{
+    margin-top:10px;
+    list-style:square;
+}
+footer ul li{
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    line-height:30px;
+}

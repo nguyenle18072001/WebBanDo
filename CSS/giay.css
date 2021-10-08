@@ -1,0 +1,261 @@
+﻿.sp{
+    padding-left:100px;
+    padding-right:100px;
+}
+body{
+    background-color:lightgray;
+    margin:0;
+}
+
+header{
+    width:1150px;
+    height:105px;
+    background-color:yellow;
+    margin:0 auto;
+}
+
+header p{
+    color:green;
+    font-weight:bold;
+    font-size:40px;
+    float:left;
+    margin-left:30px;
+    margin-top:20px;
+}
+
+nav{
+    width:100%;
+    height:40px;
+    background-color:lightgray;
+    margin-bottom:10px;
+}
+
+.topnav{
+    width:1150px;
+    position:relative;
+    height:39px;
+    background-color:green;
+    list-style:none;
+    padding:0px;
+    margin:0 auto;
+}
+
+.topnav li{
+    float:left;
+    height:40px;
+    padding:0px;
+
+}
+
+.topnav li a{
+    padding:10px 30px;
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    
+}
+
+.topnav li:hover{
+    background-color:#333;
+}
+
+.topnav li div.subsp {
+    position: absolute;
+    top: 40px;background:#FFF;
+    padding:80px;
+    display: none;
+    font-weight:bold;
+    z-index:1000;
+}
+
+.topnav li:hover div.subsp {
+    display: block;
+    width:500px;
+    height:180px;
+    left: 50px;
+    box-shadow: 3px 3px 3px #666;	                        
+    -moz-box-shadow: 3px 3px 3px #666;
+    -webkit-box-shadow: 3px 3px 3px #666;
+    opacity:0.8;
+}
+
+.topnav li div.subsp p {
+    margin-bottom:5px;
+    text-align:justify;
+}
+
+.topnav li div.subsp h3{
+    color:#F06; 
+    font-size:20px;
+    font-weight:bolder;
+}
+
+.topnav li div.subsp div.cs21 {
+    float: left; 
+    width:160px;
+}
+
+.topnav li div.subsp div.cs21 a{
+    display:block; 
+    margin:0;
+    padding:0;
+    padding:0 0 5px;
+    color:#333;
+}
+
+.topnav li div.subsp div.cs21 a:hover{
+    color:#F06;
+}
+
+#nav_social{
+    float:left;
+    width:140px;
+    margin-top:20px;
+    margin-left:450px;
+}
+
+div#search-top form{
+    width:160px;
+    float:left;
+    background:#666;
+    color:#fff;
+    padding:3px 0 3px 0;
+    margin-left:5px;
+    margin-top:20px;
+}
+
+input#search-field{
+    width:123px;
+    height:24px;
+    padding:0 6px 0 8px;
+    float:left;
+    background:#666;
+    border:none;
+    margin:0;
+    color:#fff;
+}
+input#search-field:focus{
+    color:#fff;
+}
+
+input#search-btn{
+    width:18px;
+    height:18px;
+    float:left;
+    margin:3px 0 0 0;
+    padding:0 0px 0px 0;
+    text-align:center;
+    color:#555;
+    cursor:pointer;
+    border:none;
+    background:url(../banner/search-btn.png) no-repeat center;
+}
+
+article{
+    width:100%;
+    height:800px;
+    background-color:white;
+    margin:0 auto;
+    margin-top:10px;   
+}
+
+.contentindex{
+    width:1150px;
+    height:840px;
+
+    background-color:#FFF;
+}
+
+.contentindex .sanphammoi,.sanphamkhuyenmai{
+    width:1150px;
+    height:420px;
+    background-color:#FFF;
+}
+
+.contentindex .sanphammoi h3{
+    color:#090;
+    font-style:italic;
+    line-height:30px;
+    margin:0;
+    padding-left:10px;
+    padding-top:20px;
+    border-bottom:solid 2px #FF6633;
+}
+
+.contentindex .spm,.spkm{
+    text-align:center;
+    width:250px;
+    height:auto;
+    padding-top:10px;
+    float:left;
+    margin-left:28px;
+    margin-top:10px;
+    border:solid 1px #d2d4b4;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+}
+
+.contentindex *.thongtin{
+    width:250px;
+    height:60px;
+    background-color:#c2bbbb;
+    margin:10px 0;
+    background-color:#fff;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.contentindex *.mota{
+    color:#00C;
+    margin:0;
+    padding-bottom:5px;
+    text-align:center;
+    font-size:16px;
+}
+
+.contentindex *.gia{
+    color:#F30;
+    margin:0;
+    text-align:center;
+    font-size:16px;
+}
+
+.contentindex .sanphamkhuyenmai h3{
+    color:#090;
+    font-style:italic;
+    line-height:30px;
+    margin:0;
+    padding-left:10px;
+    border-bottom:solid 2px #FF6633;
+}
+
+.contentindex .spkm img{
+    width:200px;
+    height:180px;
+}
+.contentindex .spm img{
+    width:200px;
+    height:180px;
+}
+.contentindex *.gia del{
+    color:#555;
+}
+
+footer{
+    width:1150px;
+    height:150px;
+    background-color:green;
+    margin:-10px auto;
+}
+footer ul{
+    margin-top:10px;
+    list-style:square;
+}
+footer ul li{
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    line-height:30px;
+}

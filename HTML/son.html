@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Son moi</title>
+    <meta charset="utf-8" />
+
+    <script src="../JS/Jquery.js"></script>
+
+    <script src="../JS/jquery.elevatezoom.js"></script>
+    <script src="../JS/jquery.elevateZoom-3.0.8.min.js"></script>
+    <link href="../CSS/figurecaptions.css" rel="stylesheet" />
+
+    <script src="../JS/jssor.slider-22.2.8.debug.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.min.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.mini.js"></script>
+    
+    <link href="../CSS/son.css" rel="stylesheet" />
+       
+    <script type="text/javascript">
+        jssor_1_slider_init = function () {
+
+            var jssor_1_SlideshowTransitions = [
+              { $Duration: 1200, $Opacity: 2 }
+            ];
+
+            var jssor_1_options = {
+                $AutoPlay: true,
+                $SlideshowOptions: {
+                    $Class: $JssorSlideshowRunner$,
+                    $Transitions: jssor_1_SlideshowTransitions,
+                    $TransitionsOrder: 1
+                },
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1150);/* Chỉnh độ rộng độ cao của slideshow ở đây */
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('../images/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .jssorb05 div {
+                background-position: -7px -7px;
+            }
+
+                .jssorb05 div:hover, .jssorb05 .av:hover {
+                    background-position: -37px -7px;
+                }
+
+            .jssorb05 .av {
+                background-position: -67px -7px;
+            }
+
+            .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px;
+            }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('../images/a12.png') no-repeat;
+            overflow: hidden;
+        }
+
+        .jssora12l {
+            background-position: -16px -37px;
+        }
+
+        .jssora12r {
+            background-position: -75px -37px;
+        }
+
+        .jssora12l:hover {
+            background-position: -136px -37px;
+        }
+
+        .jssora12r:hover {
+            background-position: -195px -37px;
+        }
+
+        .jssora12l.jssora12ldn {
+            background-position: -256px -37px;
+        }
+
+        .jssora12r.jssora12rdn {
+            background-position: -315px -37px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>LÊ NGUYÊN Shop</p>
+            <div id="nav_social">
+                <a href="#"><img src="../banner/instagram.png" alt="Become a fan" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/facebook.png" alt="Follows on Facebook" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/zalo.png" alt="Contact" width="40" height="40" /></a>
+            </div>
+
+            <div id="search-top">
+                <form method="post" action="#">
+                    <input type="text" onfocus="if (this.value == 'Search') this.value = '';" onblur="if (this.value == '') this.value = 'Search';" value="Search" id="search-field" />
+                    <input type="submit" value="" id="search-btn" />
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                    <div class="subsp">
+
+                        <div class="cs21">
+                            <h3>Quần áo</h3>
+                            <a href="quanao.html">Quần áo nam</a>
+                            <a href="quanao.html">Quần áo nữ</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Giày</h3>
+                            <a href="giay.html">Giày công sở</a>
+                            <a href="giay.html">Giày thể thao</a>
+                            <a href="giay.html">Giày ghệt</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Son</h3>
+                            <a href="son.html">Son dưỡng</a>
+                            <a href="son.html">Son kem</a>
+                            <a href="son.html">Son li</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <section class="slideshow">
+            <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1150px;height:250px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1150px;height:250px;overflow:hidden;">
+
+                    <div>
+
+                        <img data-u="image" src="../son/bannerson1.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="../son/bannerson2.jpg" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="../son/bannerson3.jpg" />
+                    </div>
+
+                    <div>
+                        <img data-u="image" src="../son/bannerson4.png" />
+                    </div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype" style="width:16px;height:16px;"></div>
+                </div>
+                <!-- Arrow Navigator -->
+                <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+                <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+            </div>
+            <script type="text/javascript">jssor_1_slider_init();</script>
+        </section>
+        <article class="contentindex">
+            <section class="sanphammoi">
+                <h3>SẢN PHẨM BÁN CHẠY NHẤT HIỆN NAY</h3>
+                <div class="spm">
+                    <img src="../son/son2.jpg" id="zoom_01" data-zoom-image="../son/largeson.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son lì</div>
+                        <div class="gia">Giá : 299,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+                    <img src="../son/son3.jpg" id="zoom_02" data-zoom-image="../son/largeson1.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son môi </div>
+                        <div class="gia">Giá : 200,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+
+                    <img src="../son/son4.jpg" id="zoom_03" data-zoom-image="../son/largeson2.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son lì Mỹ </div>
+                        <div class="gia">Giá : 200,000 vnđ</div>
+                    </div>
+                </div>
+
+                <div class="spm">
+
+                    <img src="../son/sonarchives.jpg" id="zoom_04" data-zoom-image="../son/largeson3.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son archives</div>
+                        <div class="gia">Giá : 150,000 vnđ</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sanphamkhuyenmai">
+
+                <div class="spkm">
+                    <img src="../son/sonbon.jpg" id="zoom_05" data-zoom-image="../son/largeson4.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son chống nhăn</div>
+                        <div class="gia">
+                            Giá: 250,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+
+
+                    <img src="../son/sonduong.png" id="zoom_06" data-zoom-image="../son/largesonduong.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son dưỡng</div>
+                        <div class="gia">
+                            Giá: 159,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+                    <img src="../son/sonkhoangchat.jpg" id="zoom_07" data-zoom-image="../son/largeson6.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son khoáng chất</div>
+                        <div class="gia">
+                            Giá: 159,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spkm">
+                    <img src="../son/sonthach.jpg" id="zoom_08" data-zoom-image="../son/largeson7.jpg" />
+                    <div class="thongtin">
+                        <div class="mota">Son thạch</div>
+                        <div class="gia">
+                            Giá: 99,000 vnđ
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <script>
+
+                $('#zoom_01').elevateZoom();
+                $('#zoom_02').elevateZoom();
+                $('#zoom_03').elevateZoom();
+                $('#zoom_04').elevateZoom();
+                $('#zoom_05').elevateZoom();
+                $('#zoom_06').elevateZoom();
+                $('#zoom_07').elevateZoom();
+                $('#zoom_08').elevateZoom();
+
+            </script>
+        </article>
+        <footer>
+            <ul>
+                <li>Cửa hàng bán sỉ và lẻ các loại giày nam, nữ, quần áo và son các loại</li>
+                <li>Địa chỉ: 46, khu phố 5, đường TTN14, phường Tân Thới Nhất, quận 12, TPHCM</li>
+                <li>Điện thoại:0909178345-01674745478</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://uhchat.net/code.php?f=83624b"></script>
+</body>
+
+</html>
+

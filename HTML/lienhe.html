@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lien he</title>
+    <meta charset="utf-8" />
+    <script src="../JS/Jquery.js"></script>
+    <script src="../JS/jquery-ui.js"></script>
+    <script src="../JS/jssor.slider-22.2.8.min.js"></script>
+    <link href="../CSS/base.css" rel="stylesheet" />
+    <link href="../CSS/lienhe.css" rel="stylesheet" />
+    <link href="../CSS/jquery-ui.css" rel="stylesheet" />
+    <script>
+        $(function(){
+            $("#datepicker").datepicker({dateFormat:"dd-mm-yy"});
+        });
+        
+    </script>
+
+
+
+    <script src="../JS/jquery.pikachoose.js"></script>
+
+    <link href="../CSS/Style.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#pikame").PikaChoose();
+        })
+    </script>
+</head>
+<body>
+    <div class="sp">
+        <header>
+            <p>LÊ NGUYÊN Shop</p>
+            <div id="nav_social">
+                <a href="#"><img src="../banner/instagram.png" alt="Become a fan" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/facebook.png" alt="Follows on Facebook" width="40" height="40" /></a>
+                <a href="#"><img src="../banner/zalo.png" alt="Contact" width="40" height="40" /></a>
+            </div>
+
+            <div id="search-top">
+                <form method="post" action="#">
+                    <input type="text" onfocus="if (this.value == 'Search') this.value = '';" onblur="if (this.value == '') this.value = 'Search';" value="Search" id="search-field" />
+                    <input type="submit" value="" id="search-btn" />
+                </form>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="GIOITHIEU.html">Giới thiệu</a></li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                    <div class="subsp">
+
+                        <div class="cs21">
+                            <h3>Quần áo</h3>
+                            <a href="quanao.html">Quần áo nam</a>
+                            <a href="quanao.html">Quần áo nữ</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Giày</h3>
+                            <a href="giay.html">Giày công sở</a>
+                            <a href="giay.html">Giày thể thao</a>
+                            <a href="giay.html">Giày ghệt</a>
+                        </div>
+
+                        <div class="cs21">
+                            <h3>Son</h3>
+                            <a href="son.html">Son dưỡng</a>
+                            <a href="son.html">Son kem</a>
+                            <a href="son.html">Son li</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <section class="slider">
+            <div class="pikachoose">
+                <ul id="pikame">
+                    <li>
+                        <a href="#">
+
+                            <img src="../banner/banner1.jpg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../banner/banner2.jpg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../banner/banner3.jpg" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../banner/banner4.jpg" alt="" />
+                        </a>
+                    </li>
+                   
+                        
+                </ul>
+            </div>
+        </section>
+        <article class="contentlienhe">
+            <section class="left">
+                <h2>Đăng ký thành viên</h2>
+                <form action="#" method="get" class="noidungform">
+                    <div class="fields">
+                        <label class="textlabel">Họ Tên:</label>
+                        <input type="text" class="standardTexBox" required />
+                    </div>
+                    <div class="fields">
+                        <label class="textlabel">Tên tài khoản:</label>
+                        <input type="text" class="standardTexBox" required />
+                    </div>
+                    <div class="fields">
+                        <label class="textlabel">Email:</label>
+                        <input type="email" class="standardTexBox" required />
+                    </div>
+                    <div class="fields">
+                        <label class="textlabel">Mật khẩu:</label>
+                        <input type="password" class="standardTexBox" required />
+                    </div>
+                    <div class="fields">
+                        <label class="textlabel">Ngày sinh</label>
+                        <input type="text" class="standardTexBox" id="datepicker" />
+                    </div>
+                    <div class="fields">
+                        <label class="textlabel">Giới tính:</label>
+                        <input name="gender" type="radio" value="Nam" checked="true" />Nam
+                        <input name="gender" type="radio" value="Nữ" />Nữ
+
+                    </div>
+                    <div class="fields">
+                        <label class="textlabel">Thành phố:</label>
+                        <select class="standardSelect">
+                            <option>Hà Nội</option>
+                            <option>Hải Phòng</option>
+                            <option>Huế</option>
+                            <option>Đà Nẵng</option>
+                            <option>Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                    <div class="fields">
+
+                        <input type="checkbox" checked />
+                        <label>Tôi đã đọc hiểu các điều khoản.</label>
+                    </div>
+                    <div class="fields">
+                        <input type="submit" value="Đăng ký" class="button" />
+                        <input type="reset" value="Reset" class="button" />
+                    </div>
+                </form>
+            </section>
+            <section class="right">
+                <iframe src="https://map.coccoc.com/map/327110070597901?title=Tr%C6%B0%E1%BB%9Dng+cao+%C4%91%E1%BA%B3ng+k%E1%BB%B9+thu%E1%BA%ADt+L%C3%BD+T%E1%BB%B1+Tr%E1%BB%8Dng&reqid=ecHKYX7J"
+                        width="640" height="480"></iframe>
+
+            </section>
+
+        </article>
+        <footer>
+            <ul>
+                <li>Cửa hàng bán sỉ và lẻ các loại giày nam, nữ, quần áo và son các loại</li>
+                <li>Địa chỉ: 46, khu phố 5, đường TTN14, phường Tân Thới Nhất, quận 12, TPHCM</li>
+                <li>Điện thoại:0909178345-0762125650</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://uhchat.net/code.php?f=83624b"></script>
+</body>
+</html>
+
